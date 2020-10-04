@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<body>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+</head>
+<h1 style="font-family: 'Bangers', cursive; font-size: 60px; text-align: center; letter-spacing: 2px;"> #TeamTakeNoLs </h1>
+<div style="display: inline-block; text-align: center; width: 100%;">
+  <img style="width: 350px; height: 350px;" src="https://i.ibb.co/njZ7dVb/female-avatar2.jpg">
+  <img style="width: 350px; height: 350px;" src="https://i.ibb.co/Vw2Nd8d/male-avatar.jpg">
+  <img style="width: 350px; height: 350px;" src="https://i.ibb.co/njZ7dVb/female-avatar2.jpg">
+</div>
+<p style="font-family: 'Bangers', cursive; font-size: 25px; text-align: center;"> Group Members: Overton Wright, MaryAshley Etefia, Olusade Calhoun </p>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+#list {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ADD8E6;
+}
+</style>
+<ul>
+  <li id="list"><a id="1" class="" href="teamtakenols.html">Home</a></li>
+  <li id="list"><a id="2" class="active" href="milestone1.html">Milestone 1</a></li>
+  <li id="list"><a id="3" class="" href="milestone2.html">Milestone 2</a></li>
+  <li id="list"><a id="4" class="" href="milestone3.html">Milestone 3</a></li>
+</ul>
+
+<script>
+  var a_li = document.getElementsByTagName("a");
+
+for(var i = 0; i<a_li.length; i++){
+    a_li[i].addEventListener("click", myScript);
+}
+
+function myScript(e){
+    var x = e.target.attributes.id.value;
+  for(var i = 0;i<a_li.length;i++){ 
+    if (a_li[i].classList.contains("active") ){
+      a_li[i].classList.toggle("active"); 
+    } 
+  }
+    a_li[parseInt(x)-1].className ="active";
+}
+</script>
+  
+<p style="font-family: 'Libre Franklin', sans-serif; font-size: 25px;" id="milestone1"><u> Milestone 1 </u> </p>
+<img src="https://i.ibb.co/yBWjKjQ/Screen-Shot-2020-09-28-at-3-36-31-PM.png">
+
+</body>
+
+</html>
