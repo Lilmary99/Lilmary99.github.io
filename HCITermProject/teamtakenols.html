@@ -23,7 +23,7 @@ ul {
   font-family: 'Libre Franklin', sans-serif;
 }
 
-li {
+#list {
   float: left;
 }
 
@@ -44,10 +44,10 @@ li a:hover:not(.active) {
 }
 </style>
 <ul>
-  <li><a id="1" class="active" href="#home">Home</a></li>
-  <li><a id="2" class="" href="#milestone1">Milestone 1</a></li>
-  <li><a id="3" class="" href="#milestone2">Milestone 2</a></li>
-  <li><a id="4" class="" href="#milestone3">Milestone 3</a></li>
+  <li id="list"><a id="1" class="active" href="#home">Home</a></li>
+  <li id="list"><a id="2" class="" href="#milestone1">Milestone 1</a></li>
+  <li id="list"><a id="3" class="" href="#milestone2">Milestone 2</a></li>
+  <li id="list"><a id="4" class="" href="#milestone3">Milestone 3</a></li>
 </ul>
 
 <script>
@@ -59,7 +59,12 @@ for(var i = 0; i<a_li.length; i++){
 
 function myScript(e){
     var x = e.target.attributes.id.value;
-    a_li[parseInt(x)].className ="active";
+  for(var i = 0;i<a_li.length;i++){ 
+    if (a_li[i].classList.contains("active") ){
+      a_li[i].classList.toggle("active"); 
+    } 
+  }
+    a_li[parseInt(x)-1].className ="active";
 }
 </script>
   
@@ -84,15 +89,15 @@ Whether or not a user utilizes our proposed solution, they would certainly benef
   </p>
   <br><br>
   
-  
+   <p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
 <b>PART B:</b>
 <br>
 <b>Principles and Guidelines</b> <br>
   <b>Guidelines: Universal Design and Accessibility</b> <br>
+  </p>
 <ol style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
 <li>Not found in Microsoft. I think this is something that our design should focus on implementing.</li>
   </ol>
-  <br>
   <br>
   <p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
   <b>Principles: Seek Universal Usability, Prevent errors</b> 
