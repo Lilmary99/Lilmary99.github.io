@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 
 <body>
 <head>
@@ -45,9 +45,9 @@ li a:hover:not(.active) {
 </style>
 <ul>
   <li><a id="1" class="active" href="#home">Home</a></li>
-  <li><a id="2" href="#milestone1">Milestone 1</a></li>
-  <li><a id="3" href="#milestone2">Milestone 2</a></li>
-  <li><a id="4" href="#milestone3">Milestone 3</a></li>
+  <li><a id="2" class="" href="#milestone1">Milestone 1</a></li>
+  <li><a id="3" class="" href="#milestone2">Milestone 2</a></li>
+  <li><a id="4" class="" href="#milestone3">Milestone 3</a></li>
 </ul>
 
 <script>
@@ -59,13 +59,7 @@ for(var i = 0; i<a_li.length; i++){
 
 function myScript(e){
     var x = e.target.attributes.id.value;
-  
-    for(var i = 0;i<li.length;i++){
-    if (a_li[i].classList.contains("active") ){
-      a_li[i].classList.toggle("active");
-    }
-    }
-    a_li[x].classList.add("active");
+    a_li[parseInt(x)].className ="active";
 }
 </script>
   
@@ -87,7 +81,8 @@ Perception wise, the mother is now stressed. She has put herself in a difficult 
 <br> 
 Nearly all working-class citizens with responsibilities and commitments other than what may fall within their work life are affected by our problem of study. Also, those that may not be the user themselves can be affected. The daughter will be positively affected if her mother attends the ceremony or negatively affected if she does not. Johnny Appleseed will be negatively affected if the mother is a crucial part of the scrum meeting and is not present…in the case that she is a scrum master or positively affected if she is present. And the mother herself, will be positively affected if she is able to stay on top of all of her events and responsibilities.
 Whether or not a user utilizes our proposed solution, they would certainly benefit from a solution by staying more organized. Their work and personal lives will become cohesive and interconnected easily by adding all events to one common platform, or even if they’re just great remembering things off the top of their head (which is quite unrealistic)…they might not need to!
-<br><br>
+  </p>
+  <br><br>
   
   
 <b>PART B:</b>
@@ -98,7 +93,10 @@ Whether or not a user utilizes our proposed solution, they would certainly benef
 <li>Not found in Microsoft. I think this is something that our design should focus on implementing.</li>
   </ol>
   <br>
+  <br>
+  <p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
   <b>Principles: Seek Universal Usability, Prevent errors</b> 
+  </p>
   <ol style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
 <li>Not found in Microsoft. I think this is something that our design should focus on implementing.</li>
 </ol>
@@ -106,7 +104,7 @@ Whether or not a user utilizes our proposed solution, they would certainly benef
  <p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
 I think these principles and guidelines will help serve our users because we want our product to be useful for all people regardless of the platform they choose. By ensuring ease-of-use in our product, customers will be more likely to find the product beneficial and necessary rather than a complex task. When looking for solutions to our problem, I found that many calendar platforms  have options to merge 2 or more calendars. The solution that I found to be the most popular tool is the Microsoft Outlook Calendar Merger. The directions for the merge tool are separated into two methods: a copy & paste method and an export-import method. Step-by-step instructions on how to execute each method are found on Microsoft’s website. While the instructions seem to be helpful, I found the instructions to be complex and long-winded. Each method includes at least 10 steps which require the user to be comfortable with Microsoft’s calendar technology. To someone with little experience in Outlook’s calendar, the merge tool could appear to be a daunting task. I was able to look up forums where people discussed having problems merging their Outlook calendars. So, it seems as though the step-by-step instructions are not as straightforward as they should be. In addition to the complex instructions, I also found that this calendar tool does not work across platforms. A user with a Google calendar and an Outlook calendar would not be able to merge the 2 into one. Lastly, I found that the tool does not take into consideration that some users with disabilities may not be able to read and understand the complex instructions needed to use the tool. My team plans to address these problems in our design. Due to these issues, I think that the Outlook calendar is lacking in the universal accessibility guideline. We believe that this guideline will help serve our users because we want our product to be useful for all people. By ensuring ease-of-use in our product and universal accessibility, customers will be more likely to find our product beneficial and necessary rather than a complex task.
   </p>
-   <br><br>
+   <br>
   
 <p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">  
 <b>PART C:</b>
@@ -114,6 +112,7 @@ I think these principles and guidelines will help serve our users because we wan
 As stated earlier, there are already some calendar mergers in existence like Microsoft’s Outlook and Google’s Gmail but those calendar mergers are built by those companies and they only allow users to merge accounts from that same email service. Our proposed solution is a new interface that follows a standard rows and columns model of displaying a monthly calendar. This new interface is more convenient AND more flexible than the existing calendar mergers because it will allow users to merge at least two different calendars from email addresses from at least two different email services. Our proposed interface will prompt first-time users to sign-in to at least two email services with calendars that they would like to merge. This user sign-in would likely be implemented using a pop-up box and the affordances of this pop-up box would be text fields for users to enter an email and password and a sign-in button. The calendar table with rows and columns is an affordance because it serves the purpose of telling users when they have scheduled events and reminders. Once the user has signed in, the interface will inform the user of which accounts that they are currently signed into in one of the corners of the screen. The initially blank calendar that follows a rows for times and columns for days model will now be populated with entries of events and reminders which will be color-coded according to the email service that the entry came from. Thus, these color-coded calendar entries act as signifiers, as they signify which email service that they come from. 
 <br><br> 
 The criteria and standards that we will be using to measure if our calendar merger is a success is: 
+   </p>
 <ol style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
 <li>The user must be able to successfully sign-in to each of their email accounts </li>
 <li>The calendar entries with their descriptions from each of the users email accounts must appear in their appropriate row and column </li>
@@ -121,7 +120,7 @@ The criteria and standards that we will be using to measure if our calendar merg
 <li>Each calendar entry must follow a universal title, location, and description format </li>
 <li>The user must not have to supply more effort other than signing-in, in order to make the merger more accessible and less complex </li>
 </ol>
-  </p>
+ 
 <br><br>
   
   <p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
