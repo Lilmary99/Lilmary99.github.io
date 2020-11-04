@@ -73,15 +73,17 @@ function myScript(e){
 <p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
   <b>Part A: </b>
 <br>
-After completing Milestone 2, our group came to the conclusion that our calendar merger should have a convenient, user-friendly implementation. We want our users to be able to merge calendars from various email services into one platform that has an appealing look and easy-to-follow interface. So, our calendar merger should have standard rows and columns in imitation of the monthly calendar with color coded reminders correlating to the email service from which the reminder came. With these requirements, our 2 user stories are:
+  After completing Milestone 2, our group came to the conclusion that our calendar merger should have a convenient, user-friendly experience. We want our users to be able to merge calendars from various email services into one platform that has an appealing look and an easy-to-follow interface. So, our calendar merger should have standard rows and columns in imitation of the monthly calendar with color coded reminders correlating to the email service from which the reminder came. With these requirements, we developed 3 user stories:
   </p>
 <ol style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
 <li>As a user, I want to sign in to each of my email accounts so that I can view all of my reminders in one place </li>
+<li>As a user, I want to be able to view scheduling conflicts so that I am able to resolve scheduling issues in one place </li>
 <li>As a user, I want be able to choose a color for each email service so that I am able to easily identify relevant reminders </li>
 </ol>
   <p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
-These user stories are both important, but the most important one is definitely the latter. We wanted our implementation to focus on a user-friendly implementation. The color coded reminders allow users to easily identify which reminders are from which email. Hopefully, users will find this implementation as favorable and simple.
+These user stories are all important, but the most important ones are definitely that last 2. We wanted our implementation to focus on a user-friendly interface. The color coded reminders allow users to easily identify which reminders are from which email. Resolving scheduling conflicts in one platform allows the user to see conflicts at first glance and edit their schedules without moving across multiple platforms. Hopefully, users will find our implementation as favorable and simple.
   </p>
+  
 <p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
   <b>Part B:</b> 
 <br>
@@ -98,15 +100,24 @@ The last user story wants to be able to customize the color of the events that s
 </p>
 <center>
   <div style="display: inline-block;">
-    <img style="width: 550px; height: 400px;" src="https://raw.githubusercontent.com/Lilmary99/Lilmary99.github.io/master/HCITermProject/User%20Story%20%231%20-%201.png" title="Wireframe #1">
-    <img style="width: 550px; height: 400px;" src="https://raw.githubusercontent.com/Lilmary99/Lilmary99.github.io/master/HCITermProject/User%20Story%20%231%20%E2%80%93%202.png" title="Wireframe #2">
-    <img style="width: 550px; height: 400px;" src="https://github.com/Lilmary99/Lilmary99.github.io/blob/master/HCITermProject/User%20Story%20%232%20-%201.png?raw=true" title="Wireframe #3">
-    <img style="width: 550px; height: 400px;" src="https://github.com/Lilmary99/Lilmary99.github.io/blob/master/HCITermProject/User%20Story%20%232%20-%202.png?raw=true" title="Wireframe #4">
-    <img style="width: 550px; height: 400px;" src="https://github.com/Lilmary99/Lilmary99.github.io/blob/master/HCITermProject/User%20Story%20%233%20-%201.png?raw=true" title="Wireframe #5">
-    <img style="width: 550px; height: 400px;" src="https://github.com/Lilmary99/Lilmary99.github.io/blob/master/HCITermProject/User%20Story%20%233%20%E2%80%93%202.png?raw=true" title="Wireframe #6">
+    <img style="width: 550px; height: 400px; border: 1px solid black;" src="https://raw.githubusercontent.com/Lilmary99/Lilmary99.github.io/master/HCITermProject/User%20Story%20%231%20-%201.png" title="Wireframe #1">
+    <img style="width: 550px; height: 400px; border: 1px solid black;" src="https://raw.githubusercontent.com/Lilmary99/Lilmary99.github.io/master/HCITermProject/User%20Story%20%231%20%E2%80%93%202.png" title="Wireframe #2">
+    <img style="width: 550px; height: 400px; border: 1px solid black;" src="https://github.com/Lilmary99/Lilmary99.github.io/blob/master/HCITermProject/User%20Story%20%232%20-%201.png?raw=true" title="Wireframe #3">
+    <img style="width: 550px; height: 400px; border: 1px solid black;" src="https://github.com/Lilmary99/Lilmary99.github.io/blob/master/HCITermProject/User%20Story%20%232%20-%202.png?raw=true" title="Wireframe #4">
+    <img style="width: 550px; height: 400px; border: 1px solid black;" src="https://github.com/Lilmary99/Lilmary99.github.io/blob/master/HCITermProject/User%20Story%20%233%20-%201.png?raw=true" title="Wireframe #5">
+    <img style="width: 550px; height: 400px; border: 1px solid black;" src="https://github.com/Lilmary99/Lilmary99.github.io/blob/master/HCITermProject/User%20Story%20%233%20%E2%80%93%202.png?raw=true" title="Wireframe #6">
 
   </div>
   </center>
+  
+ <p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
+  <b>Part C:</b> 
+   After reviewing our proposed wireframes, we sought to create mockups that inherited the most favorable attributes from each individual wireframe. To begin with, we thought it was necessary to include the sign in module in the center of the mockup from the initial wireframe so that users can instead sign in to a parent account. That way, they could still have access to all the children accounts. We also added the option for users to insert their profile picture for a more personalized feel; this was not included in the initial wireframe. The other option, signing into each account individually, does not provide as much security for the user. Otherwise, essentially anyone would be able to open and view the calendar if they had the user’s device. For the second wireframe, we decided to give users the option to see both of the scheduling events if there is a time conflict. The other option, in which the user would just see a red block to designate a time conflict, would not allow the user to see the actual details of said conflicting events, like the event name and time. Lastly, we chose to not give the option to add an email account in the top right-hand corner of the screen. Because this is the actual page where users would go in and manually add a new account, it seemed rather redundant. Instead, we sought to include a button giving users the option to return to the umbrella calendar if they chose to. 
+<br>
+While creating the mockups we found it was inevitable that we implement more design decisions than we did for the wireframes. We wanted to include the drop-down options for colors and email accounts to get a better feel of what it would look like in terms of functionality. Ideally, once the user clicks the down caret icon, they will be able to view all of the color options and email account options, respectively. After submitting, the screen would return to the homepage where the calendar resides, and the user would be able to see that the respective email account has been added, but has not yet been logged in to.
+
+ </p>
+<br>
 </body>
 
 </html>
