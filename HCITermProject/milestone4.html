@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<body>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+</head>
+<h1 style="font-family: 'Bangers', cursive; font-size: 60px; text-align: center; letter-spacing: 2px;"> #TeamTakeNoLs </h1>
+<div style="display: inline-block; text-align: center; width: 100%;">
+  <img style="width: 350px; height: 350px;" src="https://i.ibb.co/njZ7dVb/female-avatar2.jpg">
+  <img style="width: 350px; height: 350px;" src="https://i.ibb.co/Vw2Nd8d/male-avatar.jpg">
+  <img style="width: 350px; height: 350px;" src="https://i.ibb.co/njZ7dVb/female-avatar2.jpg">
+</div>
+<p style="font-family: 'Bangers', cursive; font-size: 25px; text-align: center;"> Group Members: Overton Wright, MaryAshley Etefia, Olusade Calhoun </p>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+#list {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ADD8E6;
+}
+</style>
+<ul>
+  <li id="list"><a id="1" class="" href="teamtakenols.html">Home</a></li>
+  <li id="list"><a id="2" class="" href="milestone1.html">Milestone 1</a></li>
+  <li id="list"><a id="3" class="" href="milestone2.html">Milestone 2</a></li>
+  <li id="list"><a id="4" class="" href="milestone3.html">Milestone 3</a></li>
+  <li id="list"><a id="4" class="active" href="milestone4.html">Milestone 4</a></li>
+</ul>
+
+<script>
+  var a_li = document.getElementsByTagName("a");
+
+for(var i = 0; i<a_li.length; i++){
+    a_li[i].addEventListener("click", myScript);
+}
+
+function myScript(e){
+    var x = e.target.attributes.id.value;
+  for(var i = 0;i<a_li.length;i++){ 
+    if (a_li[i].classList.contains("active") ){
+      a_li[i].classList.toggle("active"); 
+    } 
+  }
+    a_li[parseInt(x)-1].className ="active";
+}
+</script>
+  
+<p style="font-family: 'Libre Franklin', sans-serif; font-size: 25px;" id="milestone3"><u> Milestone 4 </u></p>
+  
+<p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
+  <b>Part A.1: </b>
+<br> 
+
+<br> 
+<b>Part A.2: </b>
+<br> 
+
+</p>
+  
+<p style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;">
+  <b>Part B.1:</b> 
+<br>
+In the beginning of this process, we determined that users found current implementations of schedule mergers to be complex and difficult to learn. That is why our design is centered around simplicity and user-friendliness. With the design goal usability in mind, we have developed the following research question: 
+<br>
+<mark>Is exposure time effective in decreasing the amount of time it takes to become a proficient user of our app? </mark>
+<br>
+We feel that the best way to test the user-friendliness of our app is to observe new user’s interactions with our proposed design. This is why we will be using an observation methodology to test our research question. By evaluating the amount of time it takes for new users to complete tasks, we will be able to determine just how simple our design is.
+
+<br>
+<b>Part B.2:</b> 
+<br>
+The first part of our testing procedure will require us to record how long it takes a user to 1. Sign into their email account, 2. Add an email account, and 3. Configure the appearance of their merged calendar events. The second part of our testing procedure will require us to record how long it takes to set up a merged calendar from a source that we researched in Milestone 2, which was Microsoft Outlook’s calendar merger.
+<br>
+We plan on dealing with informed consent by  providing users with a full description of our Calendar Merger, as well as which personal details that they would need to provide (and the risks associated with providing those details). We will also make them aware of the other Calendar mergers out there and the difference between ours and theirs. Finally, we will confirm that the user fully understands all of what we’ve told them.
+<br>
+The data that we will collect will be timed data and it will be organized by each phase of the first and second parts of our testing procedure… So the signing in, the adding of a different email account, etc.
+<br>
+The analysis that we will perform will require us to compare a user’s time difference between using our Calendar Merger and the export-import method of setting up Microsoft Outlook’s calendar merger. We will require each user to go through each phase of setting up our Calendar merger three times and we will time them each round. We will repeat this process for users for the Microsoft Outlook calendar merger set up. We will keep the same set f users for each process. This analysis will help us answer the research question that Overton stated earlier because it will provide us with data for comparing the learning curve between our calendar merger and Microsoft outlook’s calendar merger.
+<br>
+Since we are in a  pandemic, we believe that the safest way to conduct this testing procedure would be virtually, preferably over a Zoom video chat.
+
+<br>
+<b>Part C:</b> 
+<br>
+
+<br>
+</p>
+  
+  <center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F2p63PWINhA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+<a style="font-family: 'Libre Franklin', sans-serif; font-size: 15px;" href="https://youtu.be/F2p63PWINhA"> https://youtu.be/F2p63PWINhA </a>
+</center>
+  
+</body>
+
+</html>
